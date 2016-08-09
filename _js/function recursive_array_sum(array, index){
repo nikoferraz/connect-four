@@ -1,0 +1,7 @@
+function recursive_array_sum(array, index){
+	if (index == 0){return array[0];}
+	else if (index < 0 || index > array.length){console.log("Array out of bounds!"); return 0} 
+	return array[index]+recursive_array_sum(array, index-1)
+};
+
+var array = [1,2,3,4];

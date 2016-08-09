@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Connect Four</title>
+		<link rel="stylesheet" href="_css/main.css">
+	</head>
+	<body>
+		<h1>Play Connect Four</h1>
+		<button id="restartBtn">Restart!</button>
+		<div id="gameBoard">
+			<canvas width="400" height="300"id ="canvas0" style="border:1px solid #000000;">Canvas is not supported in this browser.</canvas>
+		</div>
+		<div class="control_panel">
+			<form name="form" action="javascript:refresh_input()" method="get">
+				Player 1: <input value="#FF0000" type="color" name="p1_color" class="color_form" id="player_1">
+				Player 2: <input value="#FFFF00" type="color" name="p2_color" class="color_form" id="player_2"><br>
+				Board size: <input name="size" id="size" type="number" max="100" min="20" value="80">
+				Rows: <input name="rows" type="number" value="6" max="60" min="5" id="rows">
+				Columns: <input name ="columns" type="number" value="7" max="70" min="5" id="columns">
+				<br><h3>Game Type</h3><br>
+				<input type="radio" name="AI" value="1" id ="human_ai" checked>Human v. AI<br>
+ 				<input type="radio" name="AI" value="2" id="human_human" >Human v. Human<br>
+				<input type="radio" name="AI" value="3" id="AI_AI">AI v. AI 
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<!-- jQuery, jQuery UI, jQuery Mobile --> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> 
+		<script type="text/javascript" src="_js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="_js/current_game.js"></script>  
+	  <script type="text/javascript" src="_js/board.js"></script>  
+		<script type="text/javascript" src="_js/game.js"></script>  
+		<!-- Jasmine  
+		<link rel="shortcut icon" type="image/png" href="jasmine/lib/jasmine-2.4.1/jasmine_favicon.png">
+		<link rel="stylesheet" type="text/css" href="jasmine/lib/jasmine-2.4.1/jasmine.css">
+		<script type="text/javascript" src="jasmine/lib/jasmine-2.4.1/jasmine.js"></script>
+		<script type="text/javascript" src="jasmine/lib/jasmine-2.4.1/jasmine-html.js"></script>
+		<script type="text/javascript" src="jasmine/lib/jasmine-2.4.1/boot.js"></script>
+		-->
+	</body>
+</html>
+
